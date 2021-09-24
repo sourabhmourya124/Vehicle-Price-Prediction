@@ -1,0 +1,46 @@
+<html>
+
+<body style="background-color:powderblue;">
+
+
+
+</body >
+
+<form action="/predict" method = "post">
+  <label for="Year">Year:</label><br>
+  <input type= number id="Year" name="Year" required = "required"><br>
+  <!-- <label for="Selling_Price">What is the selling price?:</label><br>
+  <input type="text" id="Selling_Price" name="Selling_Price" required = "required"><br> -->
+  <label for="Present_Price">What is the Present price (In Lakhs)?:</label><br>
+  <input type="text" id="Present_Price" name="Present_Price" required = "required"><br>
+  <label for="Kms_Driven">How much KMs driven?:</label><br>
+  <input type="text" id="Kms_Driven" name="Kms_Driven" required = "required"><br>
+  <label for="Fuel_Type">What is the Fuel Type?:</label><br>
+  <select id="fuel_Petrol" required="required">
+    <option value="Petrol">Petrol</option>
+    <option value="Diesel">Diesel</option>
+    <option value="CNG">CNG</option>
+</select><br>
+<label for="Seller_Type_Individual">What is the Seller type?:</label><br>
+<select id="Seller_Type_Individual" required="required"><br>
+    <option value="Dealer">Dealer</option>
+    <option value="Individual">Individual</option>
+</select><br>
+<label for="Transmission_Manual">What is the Transmission type?:</label><br>
+<select id="Transmission_Manual" required="required"><br>
+    <option value="Manual">Manual</option>
+    <option value="Automatic">Automatic</option>
+    </select><br>
+<label for="Owner_Individual">What is the Owner type?:</label><br>
+<select id="Owner_Individual" required="required"><br>
+    <option value="Individual">Individual</option>
+    <option value="Dealer">Dealer</option>
+    </select><br><br>
+<button type='submit'>predict</button>
+  
+
+  
+</form>
+
+
+</html>
